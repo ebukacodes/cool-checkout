@@ -1,16 +1,60 @@
 
 
-* {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+
+
+@media (max-width: 576px) {
+  .loginbox {
+    padding: 72px 15px 90px 15px;
+  }
 }
 
-body, html {
-	height: 100%;
-	font-family: 'Varela Round', sans-serif;
+
+/* new css */
+
+html {
+    min-height: 100%;
 }
 
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(100deg, #f0e109 50%, #004E95 50%);
+    background-size: cover;
+  background-position: center;
+}
+
+.loginbox {
+  width: 720px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  color: #000;
+  top: 5%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 30%);
+  box-sizing: border-box;
+  margin-bottom: 4rem;
+  box-shadow: #333333;
+}
+
+button:active {
+  border: 3px solid rgb(11, 31, 208);
+}
+
+button:hover {
+  border: 3px solid rgb(11, 31, 208);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
@@ -62,12 +106,40 @@ iframe {
 .imgcontainer img{
     height: 100px; 
     margin-top: -75px; 
-    border-radius: 50%; 
+    border-radius: 50%;
+    border: 1px solid #000;
 }
 
-.imgcontainer{
+/* .imgcontainer{
     display: flex; 
     justify-content:center;
+} */
+.imgcontainer{
+  width: 320px;
+  height: 420px;
+  background-color: white;
+  top: 58;
+    display: flex; 
+    justify-content:center;
+}
+
+.login100-form-logo {
+  font-size: 60px; 
+  color: #333333;
+
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 auto;
 }
 
 
@@ -79,9 +151,20 @@ iframe {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: absolute;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
 }
 
 .container-contact2 {
+  margin: 10rem;
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
@@ -93,8 +176,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-color: #013A6B;
-  background-image: -webkit-linear-gradient(100deg, #f0e109 50%, #004E95 50%);
+  
   min-height: 500px;
 }
 
@@ -112,7 +194,6 @@ iframe {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  padding: 72px 55px 90px 55px;
 }
 
 
@@ -151,12 +232,10 @@ iframe {
   padding-bottom: 30px;
 }
 
-
-
-@media (max-width: 576px) {
-  .wrap-contact2 {
-    padding: 72px 15px 90px 15px;
-  }
+@media only screen 
+and (max-device-width: 800px)
+    { 
+        input[type=text], select {
+            width: 400px;
+    }
 }
-
-
